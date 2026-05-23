@@ -4,8 +4,21 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background: #1a1a2e;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  min-height: 100vh;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 519px) {
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
 }
